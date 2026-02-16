@@ -1,0 +1,24 @@
+<h1>Carrito {{cart._id}}</h1>
+
+<section class="cart">
+  {{#if cart.products.length}}
+    <ul>
+      {{#each cart.products}}
+        <li>
+          {{#if this.product}}
+            <strong>{{this.product.title}}</strong> -
+            Cantidad: {{this.quantity}} -
+            Precio: $ {{this.product.price}} -
+            Subtotal: $ {{multiply this.product.price this.quantity}}
+          {{else}}
+            Producto eliminado de la base de datos
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+
+    <h3>Total: $ {{total}}</h3>
+  {{else}}
+    <p>El carrito está vacío.</p>
+  {{/if}}
+</section>

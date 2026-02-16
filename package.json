@@ -1,0 +1,23 @@
+{
+  "name": "coderhouse-backend-entrega-final",
+  "version": "1.0.0",
+  "description": "Entrega final backend - productos y carritos con Mongo, paginación y vistas",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.8.0",
+    "mongoose-paginate-v2": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
